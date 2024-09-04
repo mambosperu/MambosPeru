@@ -1,98 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
+ * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 
-.background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+    .background-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 
-.background-image {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
+    .background-image {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
 
-.button-container {
-    position: absolute;
-    bottom: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .button-container {
+        position: absolute;
+        bottom: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.btn {
-    padding: 15px 30px;
-    font-family: "Dosis", sans-serif;
-    font-size: 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px 0;
-    width: 200px;
-}
+    .btn {
+        padding: 15px 30px;
+        font-family: "Dosis", sans-serif;
+        font-size: 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 10px 0;
+        width: 200px;
+    }
 
-.btn i {
-    margin-right: 8px;
-    font-size: 18px;
-}
+    .btn i {
+        margin-right: 8px;
+        font-size: 18px;
+    }
 
-.btn-primary, .btn-secondary {
-    background-color: black;
-    color: white;
-}
+    .btn-primary, .btn-secondary {
+        background-color: black;
+        color: white;
+    }
 
-.btn-primary:hover, .btn-secondary:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
+    .btn-primary:hover, .btn-secondary:hover {
+        background-color: white;
+        color: black;
+        transform: scale(1.05);
+    }
 
-.btn-wsp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    left: 20px;
-    background: #0df053;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+    /* Botón de WhatsApp */
+    .btn-wsp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        left: 20px;
+        background: #0df053;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-.btn-wsp i {
-    font-size: 24px;
-}
+    .btn-wsp i {
+        font-size: 24px;
+    }
 
-.btn-wsp:hover {
-    background: #fff;
-    color: #0df053;
-    transform: scale(1.1);
-    text-decoration: none;
-}
+    .btn-wsp:hover {
+        background: #fff;
+        color: #0df053;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
