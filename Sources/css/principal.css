@@ -15,25 +15,28 @@ body {
     overflow: hidden;
 }
 
-.background-image {
+.background-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-image: url('/MambosPeru/Sources/img/Fondo/principal01.png'); /* Cambia la ruta a tu imagen */
-    background-size: contain; /* Ajusta la imagen para que se mantenga completa */
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.background-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .button-container {
-    margin-top: 300px;
+    position: absolute;
+    bottom: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .btn {
@@ -53,23 +56,12 @@ body {
     font-size: 18px;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     background-color: black;
     color: white;
 }
 
-.btn-primary:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-.btn-secondary {
-    background-color: black;
-    color: white;
-}
-
-.btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover {
     background-color: white;
     color: black;
     transform: scale(1.05);
@@ -83,7 +75,7 @@ body {
     left: 20px;
     background: #0df053;
     color: #fff;
-    border-radius: 50%; /* Cambiar la forma del botón a cuadrado */
+    border-radius: 50%;
     text-align: center;
     font-size: 30px;
     display: flex;
